@@ -13,12 +13,13 @@ body {
 
 #main {
   width: 100%;
+  
 
 }
 
 #home {
   width: 100%;
-  /* height: 100vh; */
+  height: 100vh;
   color: #fff;
   background-color: #000000;
 }
@@ -49,7 +50,7 @@ body {
 }
 
 #heading{
-    margin-top: 90px;
+    margin-top: 80px;
 }
 
 #heading h1{
@@ -80,23 +81,27 @@ body {
 
 
 #small-heading{
-    margin-top: 8.3vw;
+    margin-top: 4.3vw;
     padding: 0vh 3vw;
 }
 
 #small-heading h5{
     text-align: right;
-    font-size: 1.3vw;
+    font-size: 1vw;
     margin-top: 0.5vw;
     text-transform: uppercase;
 
 }
 
 #homefooter{
-  margin: 2vw 3vw;
+  padding: 0 3vw;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
   display: flex;
   align-items: center;
   justify-content: space-between;
+
 
 }
 
@@ -108,7 +113,7 @@ body {
 
 #iconset{
   display: flex;
-  gap: 0.8vw;
+  gap: 0.5vw;
 }
 
 #homefooter .circle{
@@ -120,4 +125,36 @@ body {
   color: #fff;
   border-radius: 50%;
   background-color: #888;
+}
+
+
+/* ********************************* */
+
+#second{
+  color: #fff;
+  /* padding-right: 10vw; */
+  padding-top: 200px;
+  width: 100%;
+  height: 100%;
+  /* height: 60rem; */
+  background-color: #000000;
+}
+
+.elem{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 86%;
+  border-top: 1px solid #888;
+  padding: 3.5vw 3vw;
+}
+
+.elem h1{
+  font-size: 7vw;
+  text-transform: uppercase;
+  opacity: .7;
+}
+
+.elemlast{
+  border-bottom: 1px solid #888;
 }
