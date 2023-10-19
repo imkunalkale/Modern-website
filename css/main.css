@@ -13,8 +13,6 @@ body {
 
 #main {
   width: 100%;
-  
-
 }
 
 #home {
@@ -111,6 +109,11 @@ body {
   color: #fff
 }
 
+#homefooter a:hover,
+#homefooter a:active{
+  opacity: .7;
+}
+
 #iconset{
   display: flex;
   gap: 0.5vw;
@@ -141,12 +144,14 @@ body {
 }
 
 .elem{
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 86%;
+  width: 88%;
   border-top: 1px solid #888;
   padding: 3.5vw 3vw;
+  padding-right: 0;
 }
 
 .elem h1{
@@ -157,4 +162,41 @@ body {
 
 .elemlast{
   border-bottom: 1px solid #888;
+}
+
+.elem img{
+  display: none;
+  height: 140%;
+  position: absolute;
+z-index: 99;
+}
+
+
+/* ************************************* */
+
+
+#about{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #fff;
+  gap: 70px; 
+  padding: 10vw 10vw;
+  padding-left: 35vw;
+  width: 100%;
+  background-color: #000000;
+}
+
+#textabout{
+  
+}
+
+
+#about img{
+  width: 200px;
+}
+
+#textabout a{
+  color: #fff;
+  text-decoration: none;
 }
