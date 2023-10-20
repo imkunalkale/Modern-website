@@ -3,6 +3,26 @@ const scroll = new LocomotiveScroll({
   smooth: true,
 });
 
+// firstPageAnim
+
+function firstPageAnim() {
+  var tl = gsap.timeline();
+
+  tl.from("#nav", {
+    y: "-10",
+    opacity: 0,
+    duration: 1.5,
+    ease: Expo.easeInOut
+  })
+
+  .to(".boundingelem", {
+    y: 0,
+    ease: Expo.easeInOut,
+    duration:2,
+    stagger: .2
+  });
+};
+
 // minicircle
 
 function circleMouseFollower() {
@@ -14,3 +34,4 @@ function circleMouseFollower() {
 }
 
 circleMouseFollower();
+firstPageAnim();
